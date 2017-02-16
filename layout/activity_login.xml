@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    tools:context="mx.edu.utng.primaria.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="302dp"
+                android:layout_height="132dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/user1"
+                app:elevation="17dp"
+                android:id="@+id/floatingActionButton2"
+                app:backgroundTint="@color/bg_screen2"
+                android:layout_weight="0.57" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Learning English"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+
+
+                />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/et_email"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"
+        />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"
+        />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="login"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/button_login_form"/>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="register"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

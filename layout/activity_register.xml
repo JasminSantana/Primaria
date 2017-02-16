@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hamburgesa"
+    tools:context="mx.edu.utng.primaria.RegisterActivity"
+    android:weightSum="1">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="131dp"
+        android:layout_height="132dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/user1"
+        app:elevation="17dp"
+        android:id="@+id/floatingActionButton2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/bg_screen2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Learning English"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+
+
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/et_user_name"
+        android:hint="User Name"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/et_user_apellidos"
+        android:hint="User LastName"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/et_email"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="23dp"
+        android:background="@drawable/edittext_login_form"
+        />
+
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="register"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="23dp"
+            android:background="@drawable/button_login_form"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:src="@drawable/loginfb"
+                android:background="@drawable/button_login_fb"
+                android:text="Login with Facebook"
+                android:textSize="15dp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/fb"
+                android:id="@+id/button"
+                android:layout_marginRight="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/button_login_fb"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button" />
+
+        </RelativeLayout>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Back to login"
+        android:id="@+id/tv_login"
+        android:textColor="@color/blue"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
